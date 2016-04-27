@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160426022636) do
+ActiveRecord::Schema.define(version: 20160427025112) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,10 +20,20 @@ ActiveRecord::Schema.define(version: 20160426022636) do
     t.integer  "borough"
     t.integer  "block"
     t.integer  "lot"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.integer  "bbl",                 null: false
+    t.string   "partial"
+    t.string   "property_type"
+    t.boolean  "easement"
+    t.boolean  "air_rights"
+    t.boolean  "subterranean_rights"
+    t.string   "property_address"
+    t.string   "unit"
+    t.text     "remarks"
   end
 
+  add_index "parcels", ["bbl"], name: "index_parcels_on_bbl", unique: true, using: :btree
   add_index "parcels", ["borough", "block", "lot"], name: "index_parcels_on_borough_block_and_lot", unique: true, using: :btree
 
 end

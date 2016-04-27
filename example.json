@@ -1,0 +1,777 @@
+{
+  "2013121701340001": {
+    "document_id": "2013121701340001",
+    "crfn": "2014000072666",
+    "collateral": "N/A",
+    "num_pages": "4",
+    "reel_page": "N/A-N/A",
+    "expiration_date": "N/A",
+    "doc_type": "DEED",
+    "file_num": "N/A",
+    "assessment_date": "N/A",
+    "doc_date": "9/27/2013",
+    "recorded_filed": "2/28/2014 5:03:22 PM",
+    "slid_num": "N/A",
+    "doc_amount": "$0.00",
+    "borough": "QUEENS",
+    "percent_transferred": "100%",
+    "rptt_num": "N/A",
+    "map_sequence": "N/A",
+    "message": "N/A",
+    "party_1": [
+      {
+        "name": "YOHANCE SHAKIR FULLER AS ADMINSTRATOR",
+        "address_1": "1313 KENNEDY STREET NW",
+        "address_2": "",
+        "city": "WASHINGTON, D.C.",
+        "state": "DC",
+        "zip": "20011",
+        "country": "US"
+      },
+      {
+        "name": "ESTATE OF RONALD FULLER",
+        "address_1": "1313 KENNEDY STREET NW",
+        "address_2": "",
+        "city": "WASHINGTON, D.C.",
+        "state": "DC",
+        "zip": "20011",
+        "country": "US"
+      },
+      {
+        "name": "ESTATE OF RONALD EZEKIEL FULLER",
+        "address_1": "1313 KENNEDY STREET NW",
+        "address_2": "",
+        "city": "WASHINGTON, D.C.",
+        "state": "DC",
+        "zip": "20011",
+        "country": "US"
+      },
+      {
+        "name": "ESTATE OF RONALD E. FULLER",
+        "address_1": "1313 KENNEDY STREET NW",
+        "address_2": "",
+        "city": "WASHINGTON, D.C.",
+        "state": "DC",
+        "zip": "20011",
+        "country": "US"
+      },
+      {
+        "name": "FULLER, LORNA A",
+        "address_1": "201 LINDEN BOULEVARD, #C12",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11226",
+        "country": "US"
+      },
+      {
+        "name": "FULLER, TIFFANY",
+        "address_1": "221 LINDEN BOULEVARD, #C12",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11226",
+        "country": "US"
+      }
+    ],
+    "party_2": [
+      {
+        "name": "FULLER, YOHANCE SHAKIR",
+        "address_1": "1313 KENNEDY STREET NW",
+        "address_2": "",
+        "city": "WASHINGTON, D.C.",
+        "state": "DC",
+        "zip": "20011",
+        "country": "US"
+      },
+      {
+        "name": "FULLER, KIMBERLY",
+        "address_1": "7119 SHORE ROAD, #3E",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11209",
+        "country": "US"
+      }
+    ],
+    "party_3": [
+
+    ],
+    "parcels": [
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "1625",
+        "lot": "1012",
+        "partial": "ENTIRE LOT",
+        "property_type": "SINGLE RESIDENTIAL CONDO UNIT",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "180 STUYVESANT AVENUE",
+        "unit": "C2",
+        "remarks": ""
+      }
+    ],
+    "references": [
+
+    ],
+    "remarks": ""
+  },
+  "2014012400306004": {
+    "document_id": "2014012400306004",
+    "crfn": "2014000072651",
+    "collateral": "N/A",
+    "num_pages": "7",
+    "reel_page": "N/A-N/A",
+    "expiration_date": "N/A",
+    "doc_type": "DEED",
+    "file_num": "N/A",
+    "assessment_date": "N/A",
+    "doc_date": "1/2/2014",
+    "recorded_filed": "2/28/2014 4:53:45 PM",
+    "slid_num": "N/A",
+    "doc_amount": "$850,000.00",
+    "borough": "MANHATTAN",
+    "percent_transferred": "100%",
+    "rptt_num": "N/A",
+    "map_sequence": "N/A",
+    "message": "N/A",
+    "party_1": [
+      {
+        "name": "UNION WALTON REALTY LLC",
+        "address_1": "199 LEE AVENUE, SUITE 103",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11211",
+        "country": "US"
+      }
+    ],
+    "party_2": [
+      {
+        "name": "SCHWIMMER, PINCUS S",
+        "address_1": "106 S. 8TH STREET, APT 2-B",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11249",
+        "country": "US"
+      },
+      {
+        "name": "SCHWIMMER, RACHEL",
+        "address_1": "106 S. 8TH STREET, APT 2-B",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11249",
+        "country": "US"
+      }
+    ],
+    "party_3": [
+
+    ],
+    "parcels": [
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "2245",
+        "lot": "1102",
+        "partial": "ENTIRE LOT",
+        "property_type": "SINGLE RESIDENTIAL CONDO UNIT",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "70 UNION AVENUE",
+        "unit": "2",
+        "remarks": ""
+      }
+    ],
+    "references": [
+
+    ],
+    "remarks": ""
+  },
+  "2014022501096003": {
+    "document_id": "2014022501096003",
+    "crfn": "2014000072646",
+    "collateral": "N/A",
+    "num_pages": "5",
+    "reel_page": "N/A-N/A",
+    "expiration_date": "N/A",
+    "doc_type": "DEED",
+    "file_num": "N/A",
+    "assessment_date": "N/A",
+    "doc_date": "2/21/2014",
+    "recorded_filed": "2/28/2014 4:53:36 PM",
+    "slid_num": "N/A",
+    "doc_amount": "$512,500.00",
+    "borough": "MANHATTAN",
+    "percent_transferred": "100%",
+    "rptt_num": "N/A",
+    "map_sequence": "N/A",
+    "message": "N/A",
+    "party_1": [
+      {
+        "name": "ROSENSTEIN , JACK",
+        "address_1": "8225 RAIN FOREST DRIVE",
+        "address_2": "",
+        "city": "ORLANDO",
+        "state": "FL",
+        "zip": "32829",
+        "country": "US"
+      },
+      {
+        "name": "ROSENSTEIN , ELIZABETH",
+        "address_1": "8225 RAIN FOREST DRIVE",
+        "address_2": "",
+        "city": "ORLANDO",
+        "state": "FL",
+        "zip": "32829",
+        "country": "US"
+      }
+    ],
+    "party_2": [
+      {
+        "name": "2414 EAST 23RD LLC",
+        "address_1": "C/O AVI ROSENGARTEN, ESQ",
+        "address_2": "1704 AVENUE M",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11230",
+        "country": "US"
+      }
+    ],
+    "party_3": [
+
+    ],
+    "parcels": [
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "7422",
+        "lot": "312",
+        "partial": "ENTIRE LOT",
+        "property_type": "DWELLING ONLY - 2 FAMILY",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "2414 E 23RD ST",
+        "unit": "",
+        "remarks": ""
+      }
+    ],
+    "references": [
+
+    ],
+    "remarks": ""
+  },
+  "2014022600164001": {
+    "document_id": "2014022600164001",
+    "crfn": "2014000072639",
+    "collateral": "N/A",
+    "num_pages": "8",
+    "reel_page": "N/A-N/A",
+    "expiration_date": "N/A",
+    "doc_type": "DEED",
+    "file_num": "N/A",
+    "assessment_date": "N/A",
+    "doc_date": "2/14/2014",
+    "recorded_filed": "2/28/2014 4:53:22 PM",
+    "slid_num": "N/A",
+    "doc_amount": "$3,450,000.00",
+    "borough": "MANHATTAN",
+    "percent_transferred": "100%",
+    "rptt_num": "N/A",
+    "map_sequence": "N/A",
+    "message": "N/A",
+    "party_1": [
+      {
+        "name": "MONITOR PROPERTIES, LLC",
+        "address_1": "207-09 ESTATES DRIVE",
+        "address_2": "",
+        "city": "BAYSIDE",
+        "state": "NY",
+        "zip": "11360",
+        "country": "US"
+      }
+    ],
+    "party_2": [
+      {
+        "name": "6 MONITOR STREET, LLC",
+        "address_1": "77 LOMBARDY STREET",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11222",
+        "country": "US"
+      }
+    ],
+    "party_3": [
+
+    ],
+    "parcels": [
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "2833",
+        "lot": "1201",
+        "partial": "ENTIRE LOT",
+        "property_type": "SINGLE RESIDENTIAL CONDO UNIT",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "6 MONITOR STREET",
+        "unit": "1A",
+        "remarks": ""
+      },
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "2833",
+        "lot": "1202",
+        "partial": "ENTIRE LOT",
+        "property_type": "SINGLE RESIDENTIAL CONDO UNIT",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "6 MONITOR STREET",
+        "unit": "1B",
+        "remarks": ""
+      },
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "2833",
+        "lot": "1203",
+        "partial": "ENTIRE LOT",
+        "property_type": "SINGLE RESIDENTIAL CONDO UNIT",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "6 MONITOR STREET",
+        "unit": "2A",
+        "remarks": ""
+      },
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "2833",
+        "lot": "1204",
+        "partial": "ENTIRE LOT",
+        "property_type": "SINGLE RESIDENTIAL CONDO UNIT",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "6 MONITOR STREET",
+        "unit": "2B",
+        "remarks": ""
+      },
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "2833",
+        "lot": "1205",
+        "partial": "ENTIRE LOT",
+        "property_type": "SINGLE RESIDENTIAL CONDO UNIT",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "6 MONITOR STREET",
+        "unit": "3A",
+        "remarks": ""
+      },
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "2833",
+        "lot": "1206",
+        "partial": "ENTIRE LOT",
+        "property_type": "SINGLE RESIDENTIAL CONDO UNIT",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "6 MONITOR STREET",
+        "unit": "3B",
+        "remarks": ""
+      },
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "2833",
+        "lot": "1207",
+        "partial": "ENTIRE LOT",
+        "property_type": "SINGLE RESIDENTIAL CONDO UNIT",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "6 MONITOR STREET",
+        "unit": "4A",
+        "remarks": ""
+      },
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "2833",
+        "lot": "1208",
+        "partial": "ENTIRE LOT",
+        "property_type": "SINGLE RESIDENTIAL CONDO UNIT",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "6 MONITOR STREET",
+        "unit": "4B",
+        "remarks": ""
+      }
+    ],
+    "references": [
+
+    ],
+    "remarks": ""
+  },
+  "2014022500646001": {
+    "document_id": "2014022500646001",
+    "crfn": "2014000072612",
+    "collateral": "N/A",
+    "num_pages": "3",
+    "reel_page": "N/A-N/A",
+    "expiration_date": "N/A",
+    "doc_type": "DEED",
+    "file_num": "N/A",
+    "assessment_date": "N/A",
+    "doc_date": "1/28/2014",
+    "recorded_filed": "2/28/2014 4:33:59 PM",
+    "slid_num": "N/A",
+    "doc_amount": "$10.00",
+    "borough": "MANHATTAN",
+    "percent_transferred": "100%",
+    "rptt_num": "N/A",
+    "map_sequence": "N/A",
+    "message": "N/A",
+    "party_1": [
+      {
+        "name": "LAMORGESE, ORONZO",
+        "address_1": "46-04 104TH STREET",
+        "address_2": "",
+        "city": "CORONA",
+        "state": "NY",
+        "zip": "11368",
+        "country": "US"
+      }
+    ],
+    "party_2": [
+      {
+        "name": "LAMORGESE, CARMELA",
+        "address_1": "46-04 104TH STREET",
+        "address_2": "",
+        "city": "CORONA",
+        "state": "NY",
+        "zip": "11368",
+        "country": "US"
+      }
+    ],
+    "party_3": [
+
+    ],
+    "parcels": [
+      {
+        "borough": "QUEENS",
+        "block": "1981",
+        "lot": "27",
+        "partial": "ENTIRE LOT",
+        "property_type": "1-3 FAMILY WITH STORE / OFFICE",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "46-04 104TH   STREET",
+        "unit": "",
+        "remarks": ""
+      }
+    ],
+    "references": [
+
+    ],
+    "remarks": ""
+  },
+  "2014022101066001": {
+    "document_id": "2014022101066001",
+    "crfn": "2014000072607",
+    "collateral": "N/A",
+    "num_pages": "5",
+    "reel_page": "N/A-N/A",
+    "expiration_date": "N/A",
+    "doc_type": "DEED",
+    "file_num": "N/A",
+    "assessment_date": "N/A",
+    "doc_date": "1/11/2014",
+    "recorded_filed": "2/28/2014 4:33:48 PM",
+    "slid_num": "N/A",
+    "doc_amount": "$0.00",
+    "borough": "BRONX",
+    "percent_transferred": "100%",
+    "rptt_num": "N/A",
+    "map_sequence": "N/A",
+    "message": "N/A",
+    "party_1": [
+      {
+        "name": "DIMAGGIO, NATALE",
+        "address_1": "2450 FISH AVENUE",
+        "address_2": "",
+        "city": "BRONX",
+        "state": "NY",
+        "zip": "10469",
+        "country": "US"
+      },
+      {
+        "name": "DIMAGGIO, IPPOLITA",
+        "address_1": "2450 FISH AVENUE",
+        "address_2": "",
+        "city": "BRONX",
+        "state": "NY",
+        "zip": "10469",
+        "country": "US"
+      }
+    ],
+    "party_2": [
+      {
+        "name": "DIMAGGIO, TRUSTEE, EMANUELE",
+        "address_1": "2450 FISH AVENUE",
+        "address_2": "",
+        "city": "BRONX",
+        "state": "NY",
+        "zip": "10469",
+        "country": "US"
+      },
+      {
+        "name": "TH DIMAGGIO FAMILY IRREVOCABLE LIVING TRUST",
+        "address_1": "2450 FISH AVENUE",
+        "address_2": "",
+        "city": "BRONX",
+        "state": "NY",
+        "zip": "10469",
+        "country": "US"
+      }
+    ],
+    "party_3": [
+
+    ],
+    "parcels": [
+      {
+        "borough": "BRONX",
+        "block": "4471",
+        "lot": "33",
+        "partial": "ENTIRE LOT",
+        "property_type": "DWELLING ONLY - 2 FAMILY",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "2450 FISH AVENUE",
+        "unit": "",
+        "remarks": ""
+      }
+    ],
+    "references": [
+
+    ],
+    "remarks": ""
+  },
+  "2014022501099001": {
+    "document_id": "2014022501099001",
+    "crfn": "2014000072575",
+    "collateral": "N/A",
+    "num_pages": "4",
+    "reel_page": "N/A-N/A",
+    "expiration_date": "N/A",
+    "doc_type": "DEED",
+    "file_num": "N/A",
+    "assessment_date": "N/A",
+    "doc_date": "2/11/2014",
+    "recorded_filed": "2/28/2014 4:23:42 PM",
+    "slid_num": "N/A",
+    "doc_amount": "$1,050,000.00",
+    "borough": "MANHATTAN",
+    "percent_transferred": "100%",
+    "rptt_num": "N/A",
+    "map_sequence": "N/A",
+    "message": "N/A",
+    "party_1": [
+      {
+        "name": "S&G PITKIN ASSOCIATES, LLC",
+        "address_1": "C/O RICHARD SENIOR 1181 EAST 22ND STREET",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11210",
+        "country": "US"
+      }
+    ],
+    "party_2": [
+      {
+        "name": "1700 PITKIN AVE LLC",
+        "address_1": "1274 EAST 7TH STREET",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11230",
+        "country": "US"
+      }
+    ],
+    "party_3": [
+
+    ],
+    "parcels": [
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "3522",
+        "lot": "16",
+        "partial": "ENTIRE LOT",
+        "property_type": "COMMERCIAL REAL ESTATE",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "1700 PITKIN AVENUE",
+        "unit": "",
+        "remarks": ""
+      }
+    ],
+    "references": [
+
+    ],
+    "remarks": ""
+  },
+  "2013120300279001": {
+    "document_id": "2013120300279001",
+    "crfn": "2014000072563",
+    "collateral": "N/A",
+    "num_pages": "5",
+    "reel_page": "N/A-N/A",
+    "expiration_date": "N/A",
+    "doc_type": "DEED",
+    "file_num": "N/A",
+    "assessment_date": "N/A",
+    "doc_date": "8/14/2013",
+    "recorded_filed": "2/28/2014 4:23:17 PM",
+    "slid_num": "N/A",
+    "doc_amount": "$10.00",
+    "borough": "MANHATTAN",
+    "percent_transferred": "50%",
+    "rptt_num": "N/A",
+    "map_sequence": "N/A",
+    "message": "N/A",
+    "party_1": [
+      {
+        "name": "LEE, CHUNG  JA",
+        "address_1": "18901 45TH ROAD",
+        "address_2": "",
+        "city": "FLUSHING",
+        "state": "NY",
+        "zip": "11358",
+        "country": "US"
+      },
+      {
+        "name": "LEE, YOONG SU",
+        "address_1": "18901 45TH ROAD",
+        "address_2": "",
+        "city": "FLUSHING",
+        "state": "NY",
+        "zip": "11358",
+        "country": "US"
+      }
+    ],
+    "party_2": [
+      {
+        "name": "LEE, YOONG SU",
+        "address_1": "18901 45TH ROAD",
+        "address_2": "",
+        "city": "FLUSHING",
+        "state": "NY",
+        "zip": "11358",
+        "country": "US"
+      }
+    ],
+    "party_3": [
+
+    ],
+    "parcels": [
+      {
+        "borough": "QUEENS",
+        "block": "5530",
+        "lot": "25",
+        "partial": "ENTIRE LOT",
+        "property_type": "DWELLING ONLY - 2 FAMILY",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "189-01 45TH   ROAD",
+        "unit": "",
+        "remarks": ""
+      }
+    ],
+    "references": [
+
+    ],
+    "remarks": ""
+  },
+  "2014022500669001": {
+    "document_id": "2014022500669001",
+    "crfn": "2014000072548",
+    "collateral": "N/A",
+    "num_pages": "6",
+    "reel_page": "N/A-N/A",
+    "expiration_date": "N/A",
+    "doc_type": "DEED",
+    "file_num": "N/A",
+    "assessment_date": "N/A",
+    "doc_date": "2/14/2014",
+    "recorded_filed": "2/28/2014 4:13:35 PM",
+    "slid_num": "N/A",
+    "doc_amount": "$155,000.00",
+    "borough": "MANHATTAN",
+    "percent_transferred": "100%",
+    "rptt_num": "N/A",
+    "map_sequence": "N/A",
+    "message": "N/A",
+    "party_1": [
+      {
+        "name": "ROBINSON, STEVEN",
+        "address_1": "954 LAFAYETTE AVENUE",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11221",
+        "country": "US"
+      },
+      {
+        "name": "ROBINSON, FONZIE",
+        "address_1": "954 LAFAYETTE AVENUE",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11221",
+        "country": "US"
+      }
+    ],
+    "party_2": [
+      {
+        "name": "BK 10  LLC",
+        "address_1": "954 LAFAYETTE AVENUE",
+        "address_2": "",
+        "city": "BROOKLYN",
+        "state": "NY",
+        "zip": "11221",
+        "country": "US"
+      }
+    ],
+    "party_3": [
+
+    ],
+    "parcels": [
+      {
+        "borough": "BROOKLYN / KINGS",
+        "block": "1610",
+        "lot": "42",
+        "partial": "ENTIRE LOT",
+        "property_type": "DWELLING ONLY - 2 FAMILY",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "954 LAFAYETTE AVENUE",
+        "unit": "",
+        "remarks": ""
+      }
+    ],
+    "references": [
+
+    ],
+    "remarks": ""
+  }
+}
