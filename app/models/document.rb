@@ -27,4 +27,6 @@
 #
 
 class Document < ActiveRecord::Base
+  has_many :documents_parcels, join_table: :documents_parcels
+  has_many :parcels, through: :documents_parcels
 end

@@ -20,5 +20,8 @@
 #
 
 class Parcel < ActiveRecord::Base
+  has_many :documents_parcels, join_table: :documents_parcels
+  has_many :documents, through: :documents_parcels
+
   validates_presence_of :bbl, :borough, :block, :lot
 end
