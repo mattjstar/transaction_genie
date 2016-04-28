@@ -21,7 +21,6 @@ namespace :parse do
         air_rights = string_to_boolean(parcel['air_rights'])
         subterranean_rights = string_to_boolean(parcel['subterranean_rights'])
 
-
         puts "_______________________________"
         puts "BECOMES: #{bbl}"
       end
@@ -49,18 +48,3 @@ def borough_int_from_name(name)
     nil
   end
 end
-
-# def parcel_params
-#   "borough",
-#   "block",
-#   "lot",
-#   "bbl",
-#   "partial",
-#   "property_type",
-#   "easement",
-#   "air_rights",
-#   "subterranean_rights",
-#   "property_address",
-#   "unit",
-#   "remarks",
-# end

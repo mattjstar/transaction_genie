@@ -11,10 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160427025112) do
+ActiveRecord::Schema.define(version: 20160428231558) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "documents", force: :cascade do |t|
+    t.string   "document_id"
+    t.string   "crfn"
+    t.string   "collateral"
+    t.integer  "num_pages"
+    t.string   "reel_page"
+    t.date     "expiration_date"
+    t.string   "doc_type"
+    t.string   "file_num"
+    t.date     "assessment_date"
+    t.date     "doc_date"
+    t.time     "recorded_filed"
+    t.string   "slid_num"
+    t.decimal  "doc_amount"
+    t.integer  "borough"
+    t.decimal  "percent_transferred"
+    t.string   "rptt_num"
+    t.string   "map_sequence_num"
+    t.string   "message"
+    t.text     "remarks"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
+
+  add_index "documents", ["document_id"], name: "index_documents_on_document_id", using: :btree
 
   create_table "parcels", force: :cascade do |t|
     t.integer  "borough"
