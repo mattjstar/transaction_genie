@@ -3,7 +3,7 @@
 # Table name: documents
 #
 #  id                  :integer          not null, primary key
-#  document_id         :string
+#  document_id_num     :string           not null
 #  crfn                :string
 #  collateral          :string
 #  num_pages           :integer

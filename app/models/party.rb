@@ -15,4 +15,6 @@
 #
 
 class Party < ActiveRecord::Base
+  has_many :documents_parties, join_table: :documents_parties
+  has_many :documents, through: :documents_parties
 end

@@ -3,7 +3,7 @@
 # Table name: documents
 #
 #  id                  :integer          not null, primary key
-#  document_id         :string
+#  document_id_num     :string           not null
 #  crfn                :string
 #  collateral          :string
 #  num_pages           :integer
@@ -29,4 +29,7 @@
 class Document < ActiveRecord::Base
   has_many :documents_parcels, join_table: :documents_parcels
   has_many :parcels, through: :documents_parcels
+
+  has_many :documents_parties, join_table: :documents_parties
+  has_many :parties, through: :documents_parties
 end
