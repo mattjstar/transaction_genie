@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160428235830) do
+ActiveRecord::Schema.define(version: 20160429014804) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20160428235830) do
     t.string   "file_num"
     t.date     "assessment_date"
     t.date     "doc_date"
-    t.time     "recorded_filed"
     t.string   "slid_num"
     t.decimal  "doc_amount"
     t.integer  "borough"
@@ -38,6 +37,7 @@ ActiveRecord::Schema.define(version: 20160428235830) do
     t.text     "remarks"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.datetime "recorded_filed_at"
   end
 
   add_index "documents", ["document_id_num"], name: "index_documents_on_document_id_num", unique: true, using: :btree

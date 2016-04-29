@@ -13,7 +13,6 @@
 #  file_num            :string
 #  assessment_date     :date
 #  doc_date            :date
-#  recorded_filed      :time
 #  slid_num            :string
 #  doc_amount          :decimal(, )
 #  borough             :integer
@@ -24,6 +23,7 @@
 #  remarks             :text
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
+#  recorded_filed_at   :datetime
 #
 
 require 'rails_helper'
