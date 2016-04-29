@@ -32,4 +32,7 @@ class Document < ActiveRecord::Base
 
   has_many :documents_parties, join_table: :documents_parties
   has_many :parties, through: :documents_parties
+
+  has_many :documents_references, join_table: :documents_references
+  has_many :references, through: :documents_references
 end

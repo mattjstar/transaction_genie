@@ -15,4 +15,6 @@
 #
 
 class Reference < ActiveRecord::Base
+  has_many :documents_references, join_table: :documents_references
+  has_many :documents, through: :documents_references
 end

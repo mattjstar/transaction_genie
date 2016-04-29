@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160428235426) do
+ActiveRecord::Schema.define(version: 20160428235830) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,6 +63,16 @@ ActiveRecord::Schema.define(version: 20160428235426) do
   add_index "documents_parties", ["document_id"], name: "index_documents_parties_on_document_id", using: :btree
   add_index "documents_parties", ["document_level"], name: "index_documents_parties_on_document_level", using: :btree
   add_index "documents_parties", ["party_id"], name: "index_documents_parties_on_party_id", using: :btree
+
+  create_table "documents_references", id: false, force: :cascade do |t|
+    t.integer  "document_id"
+    t.integer  "reference_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "documents_references", ["document_id"], name: "index_documents_references_on_document_id", using: :btree
+  add_index "documents_references", ["reference_id"], name: "index_documents_references_on_reference_id", using: :btree
 
   create_table "parcels", force: :cascade do |t|
     t.integer  "borough"
