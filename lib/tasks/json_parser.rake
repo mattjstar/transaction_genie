@@ -35,7 +35,7 @@ namespace :parse do
       doc = Document.find_by document_id_num: document_params['document_id_num']
 
       if doc
-        doc = Document.update(document_params.except('document_id_num'))
+        doc.update_attributes(document_params.except('document_id_num'))
         puts "-----DOCUMENT ALREADY EXISTS-----"
         puts "DOCUMENT updated: #{doc.id}"
       else
@@ -50,7 +50,7 @@ namespace :parse do
         block = parcel['block'].rjust(5, '0').to_i
         lot = parcel['lot'].rjust(4, '0').to_i
 
-        parcel_params['bbl'] = "#{borough}#{block}#{lot}".to_i
+        parcel_params['bbl'] = "#{borough}#{block}#{lot}"
 
         parcel_params['borough'] = borough
         parcel_params['block'] = block
@@ -186,6 +186,8 @@ end
 def borough_int_from_name(name)
   case name
   when 'MANHATTAN'
+    1
+  when 'MANHATTAN / NEW YORK'
     1
   when 'BRONX'
     2

@@ -8,7 +8,7 @@
 #  lot                 :integer
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
-#  bbl                 :integer          not null
+#  bbl                 :string           not null
 #  partial             :string
 #  property_type       :string
 #  easement            :boolean
