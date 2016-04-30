@@ -149,7 +149,7 @@ def persist_party_to_document(party_params, document, party_level)
     puts "Adding PARTY: #{party.id} to DOCUMENT: #{document.id}"
     document.parties << party
     dp = DocumentsParty.update_level(document.id, party.id, party_level)
-    puts "Updated DocumentsParty: {dp.id} with party_level: #{dp.party_level}"
+    puts "Updated DocumentsParty: #{dp.id} with party_level: #{dp.party_level}"
   else
     puts "Failed to add PARTY to DOCUMENT: #{document.id}"
   end

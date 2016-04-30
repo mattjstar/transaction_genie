@@ -7,6 +7,7 @@
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  party_level :integer
+#  id          :integer          not null, primary key
 #
 
 class DocumentsParty < ActiveRecord::Base
