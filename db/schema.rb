@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160430182016) do
+ActiveRecord::Schema.define(version: 20160430182809) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -93,6 +93,8 @@ ActiveRecord::Schema.define(version: 20160430182016) do
 
   add_index "parcels", ["bbl"], name: "index_parcels_on_bbl", unique: true, using: :btree
   add_index "parcels", ["borough", "block", "lot"], name: "index_parcels_on_borough_block_and_lot", unique: true, using: :btree
+  add_index "parcels", ["borough", "block"], name: "index_parcels_on_borough_and_block", using: :btree
+  add_index "parcels", ["borough"], name: "index_parcels_on_borough", using: :btree
 
   create_table "parties", force: :cascade do |t|
     t.string   "name"
