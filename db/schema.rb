@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160429014804) do
+ActiveRecord::Schema.define(version: 20160430180312) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,14 +55,14 @@ ActiveRecord::Schema.define(version: 20160429014804) do
   create_table "documents_parties", id: false, force: :cascade do |t|
     t.integer  "document_id"
     t.integer  "party_id"
-    t.integer  "document_level"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "party_level"
   end
 
   add_index "documents_parties", ["document_id"], name: "index_documents_parties_on_document_id", using: :btree
-  add_index "documents_parties", ["document_level"], name: "index_documents_parties_on_document_level", using: :btree
   add_index "documents_parties", ["party_id"], name: "index_documents_parties_on_party_id", using: :btree
+  add_index "documents_parties", ["party_level"], name: "index_documents_parties_on_party_level", using: :btree
 
   create_table "documents_references", id: false, force: :cascade do |t|
     t.integer  "document_id"
@@ -106,6 +106,8 @@ ActiveRecord::Schema.define(version: 20160429014804) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "parties", ["name"], name: "index_parties_on_name", using: :btree
+
   create_table "references", force: :cascade do |t|
     t.string   "crfn"
     t.string   "document_id_num"
@@ -117,5 +119,9 @@ ActiveRecord::Schema.define(version: 20160429014804) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
+
+  add_index "references", ["crfn", "document_id_num"], name: "index_references_on_crfn_and_document_id_num", unique: true, using: :btree
+  add_index "references", ["crfn"], name: "index_references_on_crfn", using: :btree
+  add_index "references", ["document_id_num"], name: "index_references_on_document_id_num", using: :btree
 
 end

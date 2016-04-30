@@ -35,4 +35,6 @@ class Document < ActiveRecord::Base
 
   has_many :documents_references, join_table: :documents_references
   has_many :references, through: :documents_references
+
+  validates_uniqueness_of :document_id_num
 end

@@ -773,5 +773,77 @@
 
     ],
     "remarks": ""
+  },
+  "2014020400069001": {
+    "document_id": "2014020400069001",
+    "crfn": "2014000071357",
+    "collateral": "N/A",
+    "num_pages": "4",
+    "reel_page": "N/A-N/A",
+    "expiration_date": "N/A",
+    "doc_type": "DEED",
+    "file_num": "N/A",
+    "assessment_date": "N/A",
+    "doc_date": "1/28/2014",
+    "recorded_filed": "2/27/2014 3:13:25 PM",
+    "slid_num": "N/A",
+    "doc_amount": "$530,000.00",
+    "borough": "QUEENS",
+    "percent_transferred": "100%",
+    "rptt_num": "N/A",
+    "map_sequence": "N/A",
+    "message": "N/A",
+    "party_1": [
+      {
+        "name": "FARIS, BERTHA",
+        "address_1": "151-56 18TH AVENUE",
+        "address_2": "",
+        "city": "WHITE STONE",
+        "state": "NY",
+        "zip": "11357",
+        "country": "US"
+      }
+    ],
+    "party_2": [
+      {
+        "name": "ACOSTA , ZAIDY E",
+        "address_1": "58-15 43RD AVENUE, 1ST FLOOR",
+        "address_2": "",
+        "city": "WOODSIDE",
+        "state": "NY",
+        "zip": "11377",
+        "country": "US"
+      }
+    ],
+    "party_3": [
+
+    ],
+    "parcels": [
+      {
+        "borough": "QUEENS",
+        "block": "9239",
+        "lot": "42",
+        "partial": "ENTIRE LOT",
+        "property_type": "DWELLING ONLY - 1 FAMILY",
+        "easement": "N",
+        "air_rights": "N",
+        "subterranean_rights": "N",
+        "property_address": "84-39 123RD   STREET",
+        "unit": "",
+        "remarks": ""
+      }
+    ],
+    "references": [
+      {
+        "crfn": "2013000098248",
+        "document_id": "",
+        "borough": "",
+        "year": "0",
+        "reel": "0",
+        "page": "0",
+        "file_nbr": ""
+      }
+    ],
+    "remarks": ""
   }
 }
