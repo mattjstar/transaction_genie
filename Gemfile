@@ -34,6 +34,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'awesome_print'
+
+# if you require 'sinatra' you get the DSL extended to Object
+gem 'sinatra', :require => nil
 gem 'sidekiq', '~> 4.1.1'
 
 group :development, :test do
