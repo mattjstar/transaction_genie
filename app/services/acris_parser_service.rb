@@ -9,7 +9,7 @@ class AcrisParserService
     my_hash = JSON.parse(@file)
 
     my_hash.each do |hash|
-      puts "_______________________________"
+      Rails.logger.info "_______________________________"
 
       data = hash[1]
       document_params = {}
@@ -35,17 +35,17 @@ class AcrisParserService
       document_params['borough'] = borough_int_from_name(data['borough'])
       document_params['percent_transferred'] = string_to_percent(data['percent_transferred'])
 
-      puts "Creating DOCUMENT from: #{document_params}"
+      Rails.logger.info "Creating DOCUMENT from: #{document_params}"
 
       doc = Document.find_by document_id_num: document_params['document_id_num']
 
       if doc
         doc.update_attributes(document_params.except('document_id_num'))
-        puts "-----DOCUMENT ALREADY EXISTS-----"
-        puts "DOCUMENT updated: #{doc.id}"
+        Rails.logger.info "-----DOCUMENT ALREADY EXISTS-----"
+        Rails.logger.info "DOCUMENT updated: #{doc.id}"
       else
         doc = Document.create(document_params)
-        puts "DOCUMENT created: #{doc.id}"
+        Rails.logger.info "DOCUMENT created: #{doc.id}"
       end
 
       parcels = data["parcels"]
@@ -70,35 +70,35 @@ class AcrisParserService
         parcel_params['air_rights'] = string_to_boolean(parcel['air_rights'])
         parcel_params['subterranean_rights'] = string_to_boolean(parcel['subterranean_rights'])
 
-        puts "Find or Creating PARCEL from: #{parcel_params}"
+        Rails.logger.info "Find or Creating PARCEL from: #{parcel_params}"
         parcel = Parcel.create_with(parcel_params.except('bbl')).find_or_create_by(bbl: parcel_params['bbl'])
         
         if parcel
-          puts "Adding PARCEL: #{parcel.id} to DOCUMENT: #{doc.id}"
+          Rails.logger.info "Adding PARCEL: #{parcel.id} to DOCUMENT: #{doc.id}"
           doc.parcels << parcel
         else
-          puts "Failed to add PARCEL to DOCUMENT: #{doc.id}"
+          Rails.logger.error "Failed to add PARCEL to DOCUMENT: #{doc.id}"
         end
       end
 
       party_1 = data["party_1"]
       party_1.each do |party|
         party_params = build_party_params(party)
-        puts "Find or Creating PARTY 1 from: #{party_params}"
+        Rails.logger.info "Find or Creating PARTY 1 from: #{party_params}"
         persist_party_to_document(party_params, doc, 1)
       end
 
       party_2 = data["party_2"]
       party_2.each do |party|
         party_params = build_party_params(party)
-        puts "Find or Creating PARTY 2 from: #{party_params}"
+        Rails.logger.info "Find or Creating PARTY 2 from: #{party_params}"
         persist_party_to_document(party_params, doc, 2)
       end
 
       party_3 = data["party_3"]
       party_3.each do |party|
         party_params = build_party_params(party)
-        puts "Find or Creating PARTY 3 from: #{party_params}"
+        Rails.logger.info "Find or Creating PARTY 3 from: #{party_params}"
         persist_party_to_document(party_params, doc, 3)
       end
 
@@ -112,9 +112,9 @@ class AcrisParserService
         reference_params["reel"] = reference["reel"]
         reference_params["page"] = reference["page"]
         reference_params["file_num"] = reference["file_nbr"]
-        puts "Creating REFERENCE from: #{reference_params}"
+        Rails.logger.info "Creating REFERENCE from: #{reference_params}"
 
-        puts "Find or Creating REFERENCE from: #{reference_params}"
+        Rails.logger.info "Find or Creating REFERENCE from: #{reference_params}"
         create_params = reference_params.except(['crfn', 'document_id_num'])
         reference = Reference.create_with(create_params).find_or_create_by(
           crfn: reference_params['crfn'], 
@@ -122,10 +122,10 @@ class AcrisParserService
         )
         
         if reference
-          puts "Adding REFERENCE: #{reference.id} to DOCUMENT: #{doc.id}"
+          Rails.logger.info "Adding REFERENCE: #{reference.id} to DOCUMENT: #{doc.id}"
           doc.references << reference
         else
-          puts "Failed to add REFERENCE to DOCUMENT: #{doc.id}"
+          Rails.logger.error "Failed to add REFERENCE to DOCUMENT: #{doc.id}"
         end
       end
     end
@@ -152,12 +152,12 @@ class AcrisParserService
     )
 
     if party
-      puts "Adding PARTY: #{party.id} to DOCUMENT: #{document.id}"
+      Rails.logger.info "Adding PARTY: #{party.id} to DOCUMENT: #{document.id}"
       document.parties << party
       dp = DocumentsParty.update_level(document.id, party.id, party_level)
-      puts "Updated DocumentsParty: #{dp.id} with party_level: #{dp.party_level}"
+      Rails.logger.info "Updated DocumentsParty: #{dp.id} with party_level: #{dp.party_level}"
     else
-      puts "Failed to add PARTY to DOCUMENT: #{document.id}"
+      Rails.logger.error "Failed to add PARTY to DOCUMENT: #{document.id}"
     end
   end
 
@@ -174,9 +174,14 @@ class AcrisParserService
   end
 
   def string_to_date_time(string)
-    # Example: "2/28/2014 5:03:22 PM"
     return nil unless string =~ /\d/
-    DateTime.strptime(string, '%m/%e/%Y %I:%M:%S %p')
+    if [9,10].include?(string.length)
+      # Example: "1/30/1970"
+      DateTime.strptime(string, '%m/%e/%Y')
+    else
+      # Example: "2/28/2014 5:03:22 PM"
+      DateTime.strptime(string, '%m/%e/%Y %I:%M:%S %p')
+    end
   end
 
   def string_to_date(string)
