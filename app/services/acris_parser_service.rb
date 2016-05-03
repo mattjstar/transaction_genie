@@ -52,8 +52,8 @@ class AcrisParserService
       parcels.each do |parcel|
         parcel_params = {}
         borough = borough_int_from_name(parcel['borough'])
-        block = parcel['block'].rjust(5, '0').to_i
-        lot = parcel['lot'].rjust(4, '0').to_i
+        block = parcel['block'].rjust(5, '0')
+        lot = parcel['lot'].rjust(4, '0')
 
         parcel_params['bbl'] = "#{borough}#{block}#{lot}"
 

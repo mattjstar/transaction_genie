@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160430190131) do
+ActiveRecord::Schema.define(version: 20160503020818) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -76,8 +76,8 @@ ActiveRecord::Schema.define(version: 20160430190131) do
 
   create_table "parcels", force: :cascade do |t|
     t.integer  "borough"
-    t.integer  "block"
-    t.integer  "lot"
+    t.string   "block",               null: false
+    t.string   "lot",                 null: false
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
     t.string   "bbl",                 null: false

@@ -4,8 +4,8 @@
 #
 #  id                  :integer          not null, primary key
 #  borough             :integer
-#  block               :integer
-#  lot                 :integer
+#  block               :string           not null
+#  lot                 :string           not null
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
 #  bbl                 :string           not null
