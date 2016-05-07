@@ -6,6 +6,8 @@ class AcrisParserService
   end
 
   def perform
+    Rails.logger.info "[AcrisParserService::perform] Starting Parse of URL: #{@file_url}"
+
     uri = URI(@file_url)
     my_hash = JSON.parse(Net::HTTP.get(uri))
 
@@ -130,6 +132,8 @@ class AcrisParserService
         end
       end
     end
+
+    Rails.logger.info "[AcrisParserService::perform] Completed Parse of URL: #{@file_url}"
   end
 
   private
