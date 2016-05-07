@@ -1,12 +1,13 @@
 class AcrisParserService
-  attr_accessor :file
+  attr_accessor :file_url
 
-  def initialize(file)
-    @file = file
+  def initialize(file_url)
+    @file_url = file_url
   end
 
   def perform
-    my_hash = JSON.parse(@file)
+    uri = URI(@file_url)
+    my_hash = JSON.parse(Net::HTTP.get(uri))
 
     my_hash.each do |hash|
       Rails.logger.info "_______________________________"
@@ -84,21 +85,21 @@ class AcrisParserService
       party_1 = data["party_1"]
       party_1.each do |party|
         party_params = build_party_params(party)
-        Rails.logger.info "Find or Creating PARTY 1 from: #{party_params}"
+        Rails.logger.info "Creating PARTY 1 from: #{party_params}"
         persist_party_to_document(party_params, doc, 1)
       end
 
       party_2 = data["party_2"]
       party_2.each do |party|
         party_params = build_party_params(party)
-        Rails.logger.info "Find or Creating PARTY 2 from: #{party_params}"
+        Rails.logger.info "Creating PARTY 2 from: #{party_params}"
         persist_party_to_document(party_params, doc, 2)
       end
 
       party_3 = data["party_3"]
       party_3.each do |party|
         party_params = build_party_params(party)
-        Rails.logger.info "Find or Creating PARTY 3 from: #{party_params}"
+        Rails.logger.info "Creating PARTY 3 from: #{party_params}"
         persist_party_to_document(party_params, doc, 3)
       end
 
@@ -146,10 +147,7 @@ class AcrisParserService
   end
 
   def persist_party_to_document(party_params, document, party_level)
-    create_params = party_params.except(['name'])
-    party = Party.create_with(create_params).find_or_create_by(
-      name: party_params['name']
-    )
+    party = Party.create(party_params)
 
     if party
       Rails.logger.info "Adding PARTY: #{party.id} to DOCUMENT: #{document.id}"
@@ -175,7 +173,7 @@ class AcrisParserService
 
   def string_to_date_time(string)
     return nil unless string =~ /\d/
-    if [9,10].include?(string.length)
+    if [8,9,10].include?(string.length)
       # Example: "1/30/1970"
       DateTime.strptime(string, '%m/%e/%Y')
     else

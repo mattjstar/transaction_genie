@@ -24,4 +24,7 @@ class Parcel < ActiveRecord::Base
   has_many :documents, through: :documents_parcels
 
   validates_presence_of :bbl, :borough, :block, :lot
+  validates :block, length: { is: 5 }
+  validates :lot, length: { is: 4 }
+  validates :bbl, length: { is: 10 }
 end
