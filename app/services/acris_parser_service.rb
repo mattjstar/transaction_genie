@@ -210,6 +210,8 @@ class AcrisParserService
       4
     when 'STATEN ISLAND'
       5
+    when 'STATEN ISLAND / RICHMOND'
+      5
     else
       nil
     end
